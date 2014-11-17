@@ -1,0 +1,35 @@
+{
+  "name": "procedural-planet",
+  "version": "1.0.0",
+  "description": "planet procedural art generative",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Tomasz Dysinski",
+    "email": "oz@bunnybones.com",
+    "url": "https://github.com/bunnybones1"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "simplex-noise": "^2.1.1",
+    "vecmath": "^0.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "planet",
+    "procedural",
+    "generative",
+    "art"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bunnybones1/procedural-planet.git"
+  },
+  "homepage": "https://github.com/bunnybones1/procedural-planet",
+  "bugs": {
+    "url": "https://github.com/bunnybones1/procedural-planet/issues"
+  }
+}

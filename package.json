@@ -14,7 +14,9 @@
     "simplex-noise": "^2.1.1",
     "vecmath": "^0.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "clear": "0.0.1"
+  },
   "scripts": {
     "test": "node test.js"
   },

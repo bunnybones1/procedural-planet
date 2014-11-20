@@ -1,4 +1,5 @@
 var PlanetSampler = require('./');
+var clear = require('clear');
 
 var asciiEmpty = "-";
 var ascii = "░▒▓▓";
@@ -12,8 +13,8 @@ var cols = 20;
 var scale = .05;
 // var high = -Infinity;
 // var low = Infinity;
-for (var iz = -layers; iz < layers; iz++) {
-	console.log("++++++++++++++++++++++++++++++++++++++++");
+function drawCrossSection(iz) {
+	clear();
 	for (var iy = -rows; iy < rows; iy++) {
 		var outputLine = iy % 2 == 0 ? "." : ",";
 		for (var ix = -cols; ix < cols; ix++) {
@@ -30,4 +31,18 @@ for (var iz = -layers; iz < layers; iz++) {
 		}
 		console.log(outputLine);
 	};
+
 }
+
+var iz = -layers; 
+function drawNextZ() {
+	if(iz < layers) {
+		drawCrossSection(iz);
+		setTimeout(function() {
+			drawNextZ();
+		}, 100);
+	}
+	iz++;
+}
+
+drawNextZ();

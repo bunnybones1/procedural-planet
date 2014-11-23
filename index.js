@@ -30,6 +30,7 @@ function PlanetSampler(sphere, octaves) {
 	octaves.forEach(function(octave) {
 		_this.magnitudeNormalizeScale += octave.magnitude;
 	})
+	this.sample = this.sample.bind(this);
 }
 
 var sphereSample = new Vector3();
